@@ -9,6 +9,9 @@ class Relationship(str, Enum):
     SIBLING = "Sibling"
     PARTNER = "Partner"
     FRIEND = "Friend"
+    GRANDPARENT = "Grandparent"
+    PET = "Pet"
+    TAPS = "TAPS"
     OTHER = "Other"
 
 class CauseOfLoss(str, Enum):
@@ -17,7 +20,12 @@ class CauseOfLoss(str, Enum):
     SUICIDE = "Suicide"
     NATURAL = "Natural"
     MURDER = "Murder"
+    HOMICIDE = "Homicide"
+    OVERDOSE = "Overdose"
+    STILLBIRTH = "Stillbirth"
+    COVID19 = "COVID19"
     OTHER = "Other"
+    AFSP = "AFSP"
 
 class ScheduleRequest(BaseModel):
     user_thoughts: str

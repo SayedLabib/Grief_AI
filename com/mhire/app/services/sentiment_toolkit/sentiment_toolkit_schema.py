@@ -15,6 +15,9 @@ class Relationship(str, Enum):
     SIBLING = "Sibling"
     PARTNER = "Partner"
     FRIEND = "Friend"
+    GRANDPARENT = "Grandparent"
+    PET = "Pet"
+    TAPS = "TAPS"
     OTHER = "Other"
 
 class CauseOfDeath(str, Enum):
@@ -23,7 +26,12 @@ class CauseOfDeath(str, Enum):
     SUICIDE = "Suicide"
     NATURAL = "Natural"
     MURDER = "Murder"
+    HOMICIDE = "Homicide"
+    OVERDOSE = "Overdose"
+    STILLBIRTH = "Stillbirth"
+    COVID19 = "COVID19"
     OTHER = "Other"
+    AFSP = "AFSP"
 
 class UserInput(BaseModel):
     user_thoughts: str

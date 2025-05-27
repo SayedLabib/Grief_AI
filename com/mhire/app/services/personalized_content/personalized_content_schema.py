@@ -8,6 +8,9 @@ class Relationship(str, Enum):
     SIBLING = "Sibling"
     PARTNER = "Partner"
     FRIEND = "Friend"
+    GRANDPARENT = "Grandparent"
+    PET = "Pet"
+    TAPS = "TAPS"
     OTHER = "Other"
 
 class CauseOfLoss(str, Enum):
@@ -16,10 +19,15 @@ class CauseOfLoss(str, Enum):
     SUICIDE = "Suicide"
     NATURAL = "Natural"
     MURDER = "Murder"
+    HOMICIDE = "Homicide"
+    OVERDOSE = "Overdose"
+    STILLBIRTH = "Stillbirth"
+    COVID19 = "COVID19"
     OTHER = "Other"
+    AFSP = "AFSP"
 
 class ToolTitle(str, Enum):
-    STAY_CONNECTED = "Stay connected"
+    STAY_CONNECTED = "Stay Connected"
     WORK_THROUGH_EMOTIONS = "Work Through Emotions"
     FIND_STRENGTH = "Find Strength"
     MINDFULNESS = "Mindfulness"

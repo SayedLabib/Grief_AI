@@ -9,12 +9,16 @@ class Emotion(str, Enum):
     NUMB = "Numb"
     CONFUSED = "Confused"
 
+
 class Relationship(str, Enum):
     PARENT = "Parent"
     CHILD = "Child"
     SIBLING = "Sibling"
     PARTNER = "Partner"
     FRIEND = "Friend"
+    GRANDPARENT = "Grandparent"
+    PET = "Pet"
+    TAPS = "TAPS"
     OTHER = "Other"
 
 class CauseOfLoss(str, Enum):
@@ -23,7 +27,12 @@ class CauseOfLoss(str, Enum):
     SUICIDE = "Suicide"
     NATURAL = "Natural"
     MURDER = "Murder"
+    HOMICIDE = "Homicide"
+    OVERDOSE = "Overdose"
+    STILLBIRTH = "Stillbirth"
+    COVID19 = "COVID19"
     OTHER = "Other"
+    AFSP = "AFSP"
 
 class CombinedRequest(BaseModel):
     user_thoughts: str
